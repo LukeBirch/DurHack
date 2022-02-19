@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 const config = {
   authRequired: false,
   auth0Logout: true,
-  secret: 'a long, randomly-generated string stored in env',
+  secret: '724b718d1ac66d03164e9c9d278210162215517d85ebf1ed68d875bc0d4c85e2',
   baseURL: 'http://localhost:3000',
   clientID: 'E8HM4ZcVK4CiEKjsbXUpO9iCfQwXyvRL',
   issuerBaseURL: 'https://dev-iftxdk33.us.auth0.com'
