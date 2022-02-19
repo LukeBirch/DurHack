@@ -17,61 +17,88 @@
         crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1 id="title">Header 1</h1>
-        <p id="intro" class="text-center">
-         This is a Paragraph
-        </p>
-        <div id="About">
-            <p id="Step1">
-                Enter your email and phone number to sign up
-            </p>
-            <p id="Step2">
-                Enter the details and phone number of your buddy
-            </p>
-            <p id="Step3">
-                You will recieve a text everyday asking you to rate your mood
-            </p>            
-            <p id="Step4">
-               If your rating is low then your buddy will be notified 
-            </p>
+        <div id="header">
+            <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-activity" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+            </svg>
+            <h1 id="title"> LifeLine </h1>
         </div>
-        <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <hr>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col" id="register">
+                    <h2>Register with us</h2>
+                    <form>
+                        <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Telephone number</label>
+                        <input type="tel" class="form-control" id="exampleInputNumber1">
+                        </div>
+                        <select class="form-select form-select-lg" aria-label=".form-select-sm example" id="choice">
+                        <option selected>How often do you want a call?</option>
+                        <option value="1">Everyday</option>
+                        <option value="2">Every other day</option>
+                        <option value="3">Every three days</option>
+                        <option value="4">Once a week</option>
+                        </select>
+                        <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">What time do you want the call?</label>
+                        <input type="time" class="form-control" id="exampleInputNumber1">
+                        </div>
+                        <button id="submit" type="submit" class="btn btn-outline-secondary">Submit</button>
+                    </form>
+                </div>
+                <div class="col">
+                    <img src="people2.jfif">
+                </div>
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Telephone number</label>
-              <input type="tel" class="form-control" id="exampleInputNumber1">
+            <hr>
+            <div class="row">
+                <div id="About">
+                    <h3 style="font-size: 250%;"> How we help...</h3>
+                    <p id="Step1">
+                        Enter your email and phone number to sign up
+                    </p>
+                    <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                    <p id="Step2">
+                        Enter the details and phone number of your buddy
+                    </p>
+                    <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                    <p id="Step3">
+                        You will recieve a text everyday asking you to rate your mood
+                    </p> 
+                    <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>     
+                    <p id="Step4">
+                    If your rating is low then your buddy will be notified 
+                    </p>
+                </div>
+                <div class="container" id="rate">
+                    <h2> Rate your day </h2>
+                    <div class="col text-center">
+                        <button type="button" class="btn" id="one">1</button>
+                        <button type="button" class="btn" id="two">2</button>
+                        <button type="button" class="btn" id="three">3</button>
+                        <button type="button" class="btn" id="four">4</button>
+                        <button type="button" class="btn" id="five">5</button>
+                        <button type="button" class="btn" id="six">6</button>
+                        <button type="button" class="btn" id="seven">7</button>
+                        <button type="button" class="btn" id="eight">8</button>
+                        <button type="button" class="btn" id="nine">9</button>
+                        <button type="button" class="btn" id="ten">10</button>
+                    </div>
+                </div>
             </div>
-            <select class="form-select form-select-lg" aria-label=".form-select-sm example" id="choice">
-              <option selected>How often do you want a call?</option>
-              <option value="1">Everyday</option>
-              <option value="2">Every other day</option>
-              <option value="3">Every three days</option>
-              <option value="4">Once a week</option>
-            </select>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">What time do you want the call?</label>
-              <input type="time" class="form-control" id="exampleInputNumber1">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-          <div class="container" id="rate">
-              <div class="col text-center">
-                <button type="button" class="btn" id="one">1</button>
-                <button type="button" class="btn" id="two">2</button>
-                <button type="button" class="btn" id="three">3</button>
-                <button type="button" class="btn" id="four">4</button>
-                <button type="button" class="btn" id="five">5</button>
-                <button type="button" class="btn" id="six">6</button>
-                <button type="button" class="btn" id="seven">7</button>
-                <button type="button" class="btn" id="eight">8</button>
-                <button type="button" class="btn" id="nine">9</button>
-                <button type="button" class="btn" id="ten">10</button>
-              </div>
-          </div>
-    <script src="client.js"></script>
+        </div>
+        <script src="" async defer></script>
     </body>
 </html>
