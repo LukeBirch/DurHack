@@ -24,42 +24,47 @@ p {
     padding-bottom: 30px;
     margin: 0, auto;
 }
+
 #one {
-    background-color: orange;
+    background-color: #e4183e;
 }
 
 #two {
-    background-color: orange;
+    background-color: #e63826;
 }
 
 #three {
-    background-color: orange;
+    background-color: #e35200;
 }
 
 #four {
-    background-color: orange;
+    background-color: #db6900;
 }
 
 #five {
-    background-color: orange;
+    background-color: #ce7e00;
 }
 
 #six {
-    background-color: orange;
+    background-color: #bd9200;
 }
 
 #seven {
-    background-color: orange;
+    background-color: #a7a400;
 }
 
 #eight {
-    background-color: orange;
+    background-color: #8cb400;
 }
 
 #nine {
-    background-color: orange;
+    background-color: #67c300;
 }
 
 #ten {
-    background-color: orange;
+    background-color: #1bd11f;
+}
+
+#choice {
+    padding-bottom: 20px;
 }
