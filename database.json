@@ -1,0 +1,15 @@
+{
+  "People": [
+    {
+      "name": "Mark",
+      "password": "password",
+      "phonenumber": 123455,
+      "tod": {
+        "minute": 10,
+        "hour": 10,
+      },
+      "frequency": 3,
+      "ratings": []
+    }
+  ]
+}
