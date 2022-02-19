@@ -45,9 +45,16 @@
               <label for="exampleInputPassword1" class="form-label">Telephone number</label>
               <input type="tel" class="form-control" id="exampleInputNumber1">
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <select class="form-select form-select-lg" aria-label=".form-select-sm example" id="choice">
+              <option selected>How often do you want a call?</option>
+              <option value="1">Everyday</option>
+              <option value="2">Every other day</option>
+              <option value="3">Every three days</option>
+              <option value="4">Once a week</option>
+            </select>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">What time do you want the call?</label>
+              <input type="time" class="form-control" id="exampleInputNumber1">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
