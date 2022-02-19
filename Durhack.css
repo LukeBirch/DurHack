@@ -1,0 +1,20 @@
+#title {
+    text-align: center;
+}
+
+#intro {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+body {
+    background-color: turquoise;
+}
+form {
+    width: 50%;
+    margin-left: 25%;
+}
+
+p {
+    text-align: center;
+}
